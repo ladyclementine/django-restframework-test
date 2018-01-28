@@ -25,7 +25,7 @@ class CotacaoRequestViewSet(viewsets.ModelViewSet):
     serializer_class = CotacaoRequestSerializer
     """ordering_fields = ('publicacao', 'nota')"""
 
-    @list_route(methods=['post'], url_path='SendCotacaoRequest', url_name='SendCotacaoRequest' )
+    @list_route(methods=['post'])
     
     def SendCotacaoRequest(self, request):
         name = request.POST['name']
